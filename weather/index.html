@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Weather</title>
+  <script type='text/javascript' src='weather.js'></script>
+  <style>
+	* {
+	margin: 0px;
+	padding: 0px;
+	font-family: "微软雅黑";
+}
+
+body {
+	background: #000;
+	/*background: url(bg.jpg) top center repeat;
+	background-size: cover;*/
+}
+
+#box {
+	width: 900px;
+	height: 500px;
+	margin: 50px auto 0;
+	border-radius: 10px;
+
+	/*background: -webkit-linear-gradient(top, rgba(0,0,0,1), rgba(255,0,0,0));
+      background: -o-linear-gradient(top, rgba(0,0,0,1), rgba(255,0,0,0));
+      background: -moz-linear-gradient(top, rgba(0,0,0,1), rgba(255,0,0,0));
+      background: linear-gradient(to bottom, rgba(0,0,0,1), rgba(255,0,0,0));*/
+
+	/*background: lightblue;*/
+	/*background: rgba(0,0,0,0.5);
+	box-shadow: 0px 0px 10px #000;*/
+	padding-top: 20px;
+}
+
+#title {
+	width: 604px;
+	height: 30px;
+	margin: 0 auto;
+}
+
+#text {
+	font-size: 16px;
+	color: #fcfcfc;
+	text-indent: 15px;
+	height: 32px;
+	width: 500px;
+	border: none;
+	background: rgba(187,255,255,0.3);
+	float: left;
+}
+
+#btn {
+	color: #fff;
+	font-size: 20px;
+	width: 100px;
+	height: 32px;
+	background: rgba(255,0,0,0.4);
+	border: 0px;
+	cursor: pointer;
+}
+
+#con {
+	width: 700px;
+	height: 400px;
+	margin: 50px auto;
+}
+
+#top {
+	width: 700px;
+	height: 35px;
+}
+
+#top span {
+	display: block;
+	line-height: 35px;
+	color: #fcfcfc;
+	float: left;
+	margin-right: 20px;
+}
+
+#top #loc {
+	margin-left: 12px;
+	font-size: 18px;
+	color: #33ccff;
+}
+
+#date {
+	font-size: 16px;
+}
+
+span strong {
+	margin-left: 15px;
+}
+
+#weather {
+	width: 700px;
+	height: 180px;
+	margin-top: 30px;
+}
+
+#weather dl {
+	width: 150px;
+	height: 180px;
+	background: rgba(0,0,0,0.1);
+	float: left;
+	margin: 0 10px;
+	border-radius: 5px;
+}
+
+#weather dl dt {
+	height: 30px;
+	line-height: 30px;
+	color: #fff;
+	text-align: center;
+	border-bottom: 1px inset rgba(0,0,0,0.2);
+}
+
+#weather dl dd {
+	height: 30px;
+	line-height: 30px;
+}
+
+#weather dl dd.img {
+	height: 30px;
+	margin: 10px auto;
+}
+
+#weather dl dd.img span {
+	width: 42px;
+	height: 30px;
+	display: block;
+	float: left;
+	margin: 0 16px;
+}
+
+#weather dl dd.info {
+	text-align: center;
+	color: #fcfcfc;
+	font-size: 14px;
+	border-bottom: 1px inset rgba(0,0,0,0.1);
+}
+
+#weather dl dd.wind {
+	border-bottom: 0px;
+	color: #fcfcfc;
+	font-size: 14px;
+	text-align: center;
+}
+
+#other {
+	width: 700px;
+	margin-top: 40px;
+}
+
+#other p {
+	font-size: 12px;
+	color: #fcfcfc;
+	margin-left: 12px;
+	margin-bottom: 10px;
+}
+
+#other p span {
+	color: #ffcc33;
+	margin-right: 5px;
+	font-size: 14px;
+}
+  </style>
+ </head>
+ <body>
+  <div id="box">
+	<div id="title">
+		<input type="text" value='武汉' id="text">
+		<input type="button" value="查询" id='btn'>
+	</div>
+	<div id="con">
+		<div id="top">
+			<span id='loc'></span>
+			<span id='date'></span>
+			<span id='pm'></span>
+			<span id='now'></span>
+		</div>
+		<div id="weather">
+			<!--<dl>
+				<dt></dt>
+				<dd class='img'>
+					<span></span>
+					<span></span>
+				</dd>
+				<dd></dd>
+				<dd></dd>
+				<dd></dd>
+			</dl>-->
+		</div>
+		<div id="other">
+			<p id="yifu"></p>
+			<p id='sheng'></p>
+		</div>
+	</div>
+  </div>
+ </body>
+
+</html>
